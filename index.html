@@ -1,0 +1,25 @@
+# 인터벌 코치 Play Store 제출 메모
+
+## 앱 식별자
+
+- Application ID: `com.jungsinwoo.intervalcoach`
+- 앱 이름: `인터벌 코치`
+
+## 권한 및 선언
+
+- 위치 권한은 실시간 속도와 거리 계산에 사용됩니다.
+- Foreground service 타입은 `location`입니다.
+- Play Console의 Foreground Service declaration에는 운동 중 GPS 기반 속도/거리 측정과 사용자가 시작/종료하는 운동 세션임을 설명해야 합니다.
+
+## Data Safety 작성 기준
+
+- 위치 정보: 앱 기능 제공 목적으로 사용
+- 운동 기록/설정: 기기 내 저장
+- 서버 전송: 없음
+- 제3자 공유: 없음
+
+## 제출 전 필요 작업
+
+- GitHub Pages에 `docs/github-pages/index.html` 내용을 게시하고 Play Console 개인정보처리방침 URL에 `https://intervalproject.github.io/` 입력
+- 개발자 연락처 이메일을 개인정보 처리방침 문서에 반영
+- Play App Signing 설정 후 release AAB 업로드
