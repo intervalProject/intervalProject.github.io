@@ -1,25 +1,155 @@
-# 인터벌 코치 Play Store 제출 메모
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="인터벌 코치 Android 앱의 개인정보 처리방침입니다."
+    />
+    <title>인터벌 코치 개인정보 처리방침</title>
+    <link rel="canonical" href="https://intervalproject.github.io/" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f8fb;
+        --surface: #ffffff;
+        --text: #172033;
+        --muted: #5b6472;
+        --line: #dfe5ee;
+        --accent: #0b66d8;
+      }
 
-## 앱 식별자
+      * {
+        box-sizing: border-box;
+      }
 
-- Application ID: `com.jungsinwoo.intervalcoach`
-- 앱 이름: `인터벌 코치`
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+        color: var(--text);
+        background: var(--bg);
+      }
 
-## 권한 및 선언
+      main {
+        width: min(880px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
 
-- 위치 권한은 실시간 속도와 거리 계산에 사용됩니다.
-- Foreground service 타입은 `location`입니다.
-- Play Console의 Foreground Service declaration에는 운동 중 GPS 기반 속도/거리 측정과 사용자가 시작/종료하는 운동 세션임을 설명해야 합니다.
+      article {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        padding: clamp(24px, 5vw, 48px);
+      }
 
-## Data Safety 작성 기준
+      h1,
+      h2 {
+        line-height: 1.25;
+      }
 
-- 위치 정보: 앱 기능 제공 목적으로 사용
-- 운동 기록/설정: 기기 내 저장
-- 서버 전송: 없음
-- 제3자 공유: 없음
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(28px, 5vw, 42px);
+      }
 
-## 제출 전 필요 작업
+      h2 {
+        margin: 34px 0 10px;
+        font-size: 20px;
+      }
 
-- GitHub Pages에 `docs/github-pages/index.html` 내용을 게시하고 Play Console 개인정보처리방침 URL에 `https://intervalproject.github.io/` 입력
-- 개발자 연락처 이메일을 개인정보 처리방침 문서에 반영
-- Play App Signing 설정 후 release AAB 업로드
+      p,
+      ul {
+        margin: 0 0 16px;
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .meta {
+        color: var(--muted);
+        margin-bottom: 30px;
+      }
+
+      .contact {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>인터벌 코치 개인정보 처리방침</h1>
+        <p class="meta">시행일: 2026년 4월 25일</p>
+
+        <p>
+          인터벌 코치는 사용자의 운동 중 실시간 속도와 이동 거리를 계산하기 위해
+          기기의 위치 정보를 사용합니다. 본 개인정보 처리방침은 Android 앱
+          <strong>인터벌 코치</strong>에 적용됩니다.
+        </p>
+
+        <h2>수집 및 처리하는 정보</h2>
+        <ul>
+          <li>
+            위치 정보: 사용자가 운동을 시작한 뒤 운동이 진행되는 동안 현재 속도와
+            이동 거리 계산에 사용됩니다. 운동 중에는 앱이 화면에 보이지 않아도
+            포그라운드 서비스 알림을 통해 속도와 거리 계산이 계속될 수 있습니다.
+          </li>
+          <li>
+            운동 기록: 운동 시작 시간, 운동 시간, 평균 속도, 최고 속도, 거리,
+            완료 여부, 목표 속도 미달 횟수가 기기 안에 저장됩니다.
+          </li>
+          <li>
+            사용자 설정 및 프리셋: 인터벌 시간, 세트 수, 목표 속도, 알림 설정이
+            기기 안에 저장됩니다.
+          </li>
+        </ul>
+
+        <h2>사용 목적</h2>
+        <p>
+          위치 정보는 실시간 속도 표시, 거리 계산, 목표 속도 미달 알림, 운동 기록
+          저장에만 사용됩니다. 인터벌 코치는 사용자의 위치 정보를 광고, 분석,
+          추적 또는 마케팅 목적으로 사용하지 않습니다.
+        </p>
+
+        <h2>외부 전송 및 공유</h2>
+        <p>
+          인터벌 코치는 위치 정보, 운동 기록, 사용자 설정을 자체 서버로 전송하지
+          않습니다. 또한 해당 정보를 제3자에게 판매하거나 공유하지 않습니다.
+        </p>
+
+        <h2>보관 및 삭제</h2>
+        <p>
+          운동 기록은 사용자가 앱의 기록 화면에서 삭제할 수 있습니다. 앱을
+          삭제하거나 앱 데이터를 지우면 기기에 저장된 운동 기록, 사용자 설정,
+          프리셋도 삭제됩니다.
+        </p>
+
+        <h2>백업</h2>
+        <p>
+          기기의 Android 백업 설정이 켜져 있는 경우, 앱 데이터가 사용자의 Google
+          계정 백업 또는 기기 복원 과정에 포함될 수 있습니다. 백업 여부와 보관
+          기간은 Android 및 Google 계정 설정을 따릅니다.
+        </p>
+
+        <h2>문의</h2>
+        <p class="contact">
+          개인정보 처리방침에 대한 문의는
+          <a href="mailto:interval723@gmail.com">interval723@gmail.com</a>으로
+          연락해 주세요.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
